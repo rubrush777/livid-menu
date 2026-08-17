@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secret Page</title>
+</head>
+<body>
+
+  <div id="login">
+    <h2>Enter the secret</h2>
+    <input type="password" id="secret" placeholder="Secret key..." />
+    <button onclick="tryUnlock()">Enter</button>
+    <p id="error" style="color:red;"></p>
+  </div>
+
+  <div id="content" style="display:none;">
+    <h2>Secret content 🎉</h2>
+    <pre><code>
+      // your secret code here
+      console.log("you're in!");
+    </code></pre>
+  </div>
+
+  <script>
+    const SECRET = "1"; // change this
+
+    function tryUnlock() {
+      const input = document.getElementById("secret").value;
+      if (input === SECRET) {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      } else {
+        document.getElementById("error").textContent = "Wrong secret!";
+      }
+    }
+  </script>
+
+</body>
+</html>
