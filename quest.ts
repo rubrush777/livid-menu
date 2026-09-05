@@ -251,7 +251,6 @@ function httpRequest(
 async function loadQuestServers() {
   console.log("\n");
   console.log("[+] Unpatchable Quest Servers");
-  console.log("[+] Made by w2g8 on discord...");
 
   const symResponse = await httpRequest(SYMBOLS_URL, "GET", {});
   if (symResponse.status === 200) {
