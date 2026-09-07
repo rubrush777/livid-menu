@@ -393,6 +393,5 @@ Il2Cpp.perform(() => {
     } catch (error) {
     }
 
-    console.log('Bypassed by byte');
-    console.log('DaBeanz');
+    console.log('Bypassed by Livid Mods (Your Daddy)');
 });
